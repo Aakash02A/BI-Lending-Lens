@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Features - Lending Lens</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background: url('https://img.freepik.com/free-photo/top-view-office-desk-with-growth-chart-coins_23-2148780621.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+    }
+
+    .navbar {
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .feature-section {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 60px 20px;
+      border-radius: 16px;
+      margin: 40px auto;
+    }
+
+    .card {
+      background: rgba(0, 179, 219, 0.8);
+      border: none;
+      border-radius: 16px;
+      transition: transform 0.3s;
+      height: 100%;
+      color: #fff;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(0, 179, 219, 1);
+    }
+
+    .card-title {
+      color: #00e1ff;
+      font-weight: bold;
+    }
+
+    .card-text {
+      color: #f0f0f0;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">📋 Lending Lens</div>
+  <div class="nav-links" id="navLinks">
+    <!-- Nav links will be injected here -->
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="container feature-section">
+  <h2 class="text-center mb-5">🚀 Explore Lending Lens Features</h2>
+  <div class="row g-4">
+
+    <!-- Loan Product Management -->
+    <div class="col-md-6">
+      <div class="card p-4">
+        <h5 class="card-title">📋 Loan Product Management</h5>
+        <p class="card-text">
+          ➤ Manage Personal, Business, and Home Loans<br>
+          ➤ Set Interest Rates, Tenures (5 yrs, 10 yrs, etc.)<br>
+          ➤ Minimum/Maximum Loan Limits<br>
+          ➤ Configure Prepayment Penalties<br>
+          <strong>👉 Easy control for lenders!</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Partner Institutions -->
+    <div class="col-md-6">
+      <div class="card p-4">
+        <h5 class="card-title">🏦 Partner Institutions</h5>
+        <p class="card-text">
+          ➤ Manage Bank/NBFC Partnerships<br>
+          ➤ Add, Edit, or Disable Partners<br>
+          ➤ View Partner Performance Stats<br>
+          <strong>👉 Build strong lending networks!</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Custom Risk Settings -->
+    <div class="col-md-6">
+      <div class="card p-4">
+        <h5 class="card-title">📊 Custom Risk Settings</h5>
+        <p class="card-text">
+          ➤ Set Credit Score Cutoffs<br>
+          ➤ DTI Ratio Limits (Debt-to-Income)<br>
+          ➤ Auto Approve/Reject Based on Rules<br>
+          ➤ Examples: "Reject Credit Score < 600"<br>
+          <strong>👉 Smarter loan decisions!</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Notification Center -->
+    <div class="col-md-6">
+      <div class="card p-4">
+        <h5 class="card-title">🔔 Notification Center</h5>
+        <p class="card-text">
+          ➤ Customize Email/SMS Alerts<br>
+          ➤ Application Submitted / Approved / Rejected<br>
+          ➤ Payment Reminders<br>
+          ➤ Personalize messages easily<br>
+          <strong>👉 Keep users informed!</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature Toggles -->
+    <div class="col-md-12">
+      <div class="card p-4">
+        <h5 class="card-title">🧩 Feature Toggles</h5>
+        <p class="card-text">
+          ➤ Turn ON/OFF Loan Types<br>
+          ➤ Enable Special Offers (Festive Loans)<br>
+          ➤ Beta Test New Features (New UI, New Reports)<br>
+          <strong>👉 Dynamic platform updates without coding!</strong>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const navLinks = document.getElementById('navLinks');
+  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+  function updateNav() {
+    navLinks.innerHTML = `
+      <a href="index.html">Home</a>
+      ${isLoggedIn ? `
+        <a href="dashboard.html">Dashboard</a>
+        <a href="reports.html">Reports</a>
+        <a href="features.html">Features</a>
+        <a href="#" onclick="logout()">Logout</a>
+      ` : `
+        <a href="login.html">Login</a>
+      `}
+    `;
+  }
+
+  function logout() {
+    localStorage.removeItem('isLoggedIn');
+    updateNav();
+    alert("You have been logged out.");
+    location.href = 'index.html';
+  }
+
+  updateNav();
+</script>
+
+</body>
+</html>
