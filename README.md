@@ -24,17 +24,17 @@
 
 ## 📑 Table of Contents
 
-- [📌 Overview](#-overview)
-- [✨ Key Features](#-key-features)
-- [🖥️ System Previews](#️-system-previews)
-- [🧭 Application Architecture & Workflow](#-application-architecture--workflow)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [🔐 Demo Authentication](#-demo-authentication)
-- [🚀 Quick Start & Installation](#-quick-start--installation)
-- [📂 Project Structure](#-project-structure)
-- [📊 Business Intelligence Highlights](#-business-intelligence-highlights)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+- 📌 [Overview](#-overview)
+- ✨ [Key Features](#-key-features)
+- 🖥️ [System Previews](#️-system-previews)
+- 🧭 [Application Architecture & Workflow](#-application-architecture--workflow)
+- 🛠️ [Tech Stack](#️-tech-stack)
+- 🔐 [Demo Authentication](#-demo-authentication)
+- 🚀 [Quick Start & Installation](#-quick-start--installation)
+- 📂 [Project Structure](#-project-structure)
+- 📊 [Business Intelligence Highlights](#-business-intelligence-highlights)
+- 🤝 [Contributing](#-contributing)
+- 📄 [License](#-license)
 
 ---
 
