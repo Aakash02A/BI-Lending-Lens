@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="Assets/Banner.png" alt="Lending Lens Banner" width="100%" style="border-radius: 12px; margin-bottom: 20px;" />
+  <img src="assets/Banner.png" alt="Lending Lens Banner" width="100%" style="border-radius: 12px; margin-bottom: 20px;" />
 
   # 🔍 Lending Lens
   ### *Frontend Web Application for Loan Analysis & Cognos BI Dashboards*
@@ -99,7 +99,7 @@ Instead of complex backend infrastructures, the project demonstrates how busines
 
 <div align="center">
   <h3>📊 IBM Cognos Embedded Analytics View</h3>
-  <img src="Assets/Dashboard.png" alt="Lending Lens Dashboard Screenshot" width="90%" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
+  <img src="assets/Dashboard.png" alt="Lending Lens Dashboard Screenshot" width="90%" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
 </div>
 
 ---
@@ -178,7 +178,7 @@ Because **Lending Lens** is purely client-side, running it locally requires no b
 ```text
 BI-Lending-Lens/
 │
-├── Assets/
+├── assets/
 │   ├── Banner.png                  # Project banner graphic
 │   └── Dashboard.png               # Cognos dashboard preview screenshot
 │
