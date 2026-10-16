@@ -1,0 +1,6 @@
+# Local IDE settings
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db

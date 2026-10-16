@@ -3,10 +3,10 @@
   <img src="Assets/Banner.png" alt="Lending Lens Banner" width="100%" style="border-radius: 12px; margin-bottom: 20px;" />
 
   # 🔍 Lending Lens
-  ### *Intelligent Loan Analytics & Risk Assessment BI Platform*
+  ### *Frontend Web Application for Loan Analysis & Cognos BI Dashboards*
 
   <p align="center">
-    A data-driven Business Intelligence (BI) web application designed to evaluate loan applicants, forecast approval trends, assess borrower credit risks, and optimize financial decision-making through embedded IBM Cognos analytics.
+    <b>Lending Lens is a frontend-based web application for loan analysis and prediction that helps assess borrower behavior, predict loan approvals, and visualize financial risks. It includes admin login, interactive dashboards (Cognos), and reports.</b>
   </p>
 
   <p align="center">
@@ -35,20 +35,20 @@
 - [📊 Business Intelligence Highlights](#-business-intelligence-highlights)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
-- [👤 Author & Contact](#-author--contact)
 
 ---
 
 ## 📌 Overview
 
-**Lending Lens** is an interactive financial intelligence dashboard engineered to empower credit analysts, loan officers, and financial institutions with real-time risk evaluation and lending portfolio metrics. 
+**Lending Lens** is a lightweight frontend web application developed to showcase loan portfolio analytics and risk evaluation. The core of the project connects an interactive **IBM Cognos Analytics** dashboard directly into an HTML/CSS/JavaScript web interface, providing an accessible portal for reviewing credit trends, approval patterns, and borrower financial indicators.
 
-By unifying client-side web technologies with **IBM Cognos Analytics**, the platform ingests and explores loan applicant portfolios across multiple financial dimensions—including **credit score distribution, debt-to-income (DTI) ratios, loan approval probabilities, income verification, and default risk**.
+Instead of complex backend infrastructures, the project demonstrates how business intelligence dashboards can be embedded cleanly into modern client-side web interfaces with client-side authentication, structured analytical summaries, and loan product configuration mockups.
 
-### Why Lending Lens?
-- 🎯 **Data-Driven Credit Decisions**: Eliminates guesswork by visualizing applicant risk tiers and approval probabilities.
-- ⚡ **Zero-Setup Lightweight Deployment**: Runs directly in the browser with no backend or database server configuration required.
-- 📈 **Executive BI Delivery**: Pairs high-level KPIs with interactive drill-down reports and configuration toggles.
+### Highlights
+- 📊 **Direct Cognos Embed**: Visual dashboard created in IBM Cognos Analytics and integrated straight into HTML via a responsive iframe.
+- 🎯 **Credit & Risk Analysis**: Visual exploration of loan applicant data across credit score tiers, debt-to-income (DTI) ratios, and approval rates.
+- ⚡ **100% Client-Side**: Runs directly in any web browser without server setup, backend runtime, or database dependencies.
+- 📑 **Comprehensive Portal**: Bundles a home hub, demo login flow, live embedded dashboard, editable analytical report, and feature management showcase.
 
 ---
 
@@ -59,35 +59,35 @@ By unifying client-side web technologies with **IBM Cognos Analytics**, the plat
     <td width="50%">
       <h3>📈 Embedded Cognos BI Dashboard</h3>
       <ul>
-        <li>Real-time interactive dashboard powered by <b>IBM Cognos Analytics</b>.</li>
-        <li>Visualizes applicant loan amounts, approvals, rejection ratios, and repayment risk.</li>
-        <li>Full-screen iframe integration with dynamic responsiveness.</li>
+        <li>Interactive dashboard built in <b>IBM Cognos Analytics</b>.</li>
+        <li>Embedded directly into <code>dashboard.html</code> via a responsive iframe.</li>
+        <li>Visualizes loan amounts, approval vs. rejection distributions, credit scores, and applicant metrics.</li>
       </ul>
     </td>
     <td width="50%">
-      <h3>🔐 Simulated Authentication Flow</h3>
+      <h3>🔐 Simulated Authentication</h3>
       <ul>
-        <li>Client-side credential verification with session caching in <code>localStorage</code>.</li>
-        <li>Route guard mechanics protecting Dashboard, Reports, and Feature portals.</li>
-        <li>Seamless single-click logout and state restoration.</li>
+        <li>Client-side credential verification with session state stored in <code>localStorage</code>.</li>
+        <li>Route protection guarding access to Dashboard, Reports, and Features.</li>
+        <li>Single-click logout mechanism that resets session access.</li>
       </ul>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <h3>📋 Interactive Project Reports</h3>
+      <h3>📋 Analytical Project Reports</h3>
       <ul>
-        <li>Accordion-style breakdown covering <i>Executive Summary</i>, <i>Methodology</i>, and <i>Approval Trends</i>.</li>
-        <li><b>Live Editable Mode</b>: Toggle <code>contenteditable</code> inline documentation updates on the fly.</li>
-        <li>Structured analytical findings based on loan applicant metrics.</li>
+        <li>Accordion-style analytical documentation covering project methodology and approval trends.</li>
+        <li><b>Live Editable Mode</b>: Toggle inline <code>contenteditable</code> to customize report notes on the fly.</li>
+        <li>Clear summaries of applicant insights and lending metrics.</li>
       </ul>
     </td>
     <td width="50%">
-      <h3>⚙️ Feature & Risk Management Hub</h3>
+      <h3>⚙️ Feature & Risk Showcase</h3>
       <ul>
-        <li><b>Loan Product Settings</b>: Configure rates and tenure for Personal, Business, & Home loans.</li>
-        <li><b>Custom Risk Rules</b>: Define credit score cutoffs and maximum DTI thresholds.</li>
-        <li><b>Feature Toggles</b>: Enable/disable promotional programs and modular features dynamically.</li>
+        <li><b>Loan Product Management</b>: Configurable parameters for Personal, Business, and Home loans.</li>
+        <li><b>Custom Risk Settings</b>: Visualized criteria for credit score cutoffs and DTI thresholds.</li>
+        <li><b>Feature Toggles</b>: Demonstrates modular feature enablement without code modifications.</li>
       </ul>
     </td>
   </tr>
@@ -99,7 +99,7 @@ By unifying client-side web technologies with **IBM Cognos Analytics**, the plat
 
 <div align="center">
   <h3>📊 IBM Cognos Embedded Analytics View</h3>
-  <img src="Screenshot 2025-04-20 215401.png" alt="Lending Lens Dashboard Screenshot" width="90%" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
+  <img src="Assets/Dashboard.png" alt="Lending Lens Dashboard Screenshot" width="90%" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
 </div>
 
 ---
@@ -108,12 +108,12 @@ By unifying client-side web technologies with **IBM Cognos Analytics**, the plat
 
 ```mermaid
 flowchart LR
-    A[Visitor] --> B[login.html]
-    B -->|Authenticate admin/admin123| C[(localStorage Session)]
+    A[Visitor] --> B[login.html<br/>Admin Login]
+    B -->|admin / admin123| C[(localStorage Session)]
     C --> D[index.html<br/>Home Hub]
-    D --> E[dashboard.html<br/>IBM Cognos BI Dashboard]
-    D --> F[reports.html<br/>Editable Analytical Reports]
-    D --> G[features.html<br/>Loan & Risk Configuration]
+    D --> E[dashboard.html<br/>Embedded IBM Cognos BI]
+    D --> F[reports.html<br/>Analytical Project Report]
+    D --> G[features.html<br/>Feature & Risk Showcase]
     E -.->|Logout| B
     F -.->|Logout| B
     G -.->|Logout| B
@@ -123,34 +123,33 @@ flowchart LR
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology | Description |
+| Layer | Technology | Role in Project |
 | :--- | :--- | :--- |
-| **Frontend Core** | `HTML5`, `CSS3` | Semantic markup, custom styling, glassmorphism, and responsive grid layouts |
-| **Scripting & Logic** | `JavaScript (ES6+)` | Client-side routing, auth simulation, UI interactions, and session handling |
-| **CSS Framework** | `Bootstrap 5.3` | Grid system, responsive utility classes, navigation bars, and collapsible accordions |
-| **Business Intelligence** | `IBM Cognos Analytics` | Embedded interactive BI dashboard reporting and data visualization |
-| **Data Source** | `Microsoft Excel (.xlsx)` | Structured loan dataset containing applicant demographic and financial metrics |
-| **Icons & Media** | `Font / Image Assets` | Custom visual assets, banners, and curated UI backdrops |
+| **Frontend UI** | `HTML5`, `CSS3` | Page structure, layout, custom styling, and responsive UI |
+| **Styling Framework** | `Bootstrap 5.3` | Responsive grid system, accordions, and navigation components |
+| **Client-Side Logic** | `JavaScript (ES6+)` | Session handling (`localStorage`), navigation updates, and inline editing |
+| **Business Intelligence** | `IBM Cognos Analytics` | Cloud-hosted BI dashboard connected directly into the HTML web application |
+| **Dataset** | `Microsoft Excel (.xlsx)` | Loan applicant data ([`data/lending lens .xlsx`](data/lending%20lens%20.xlsx)) used for building the Cognos visualizations |
 
 ---
 
 ## 🔐 Demo Authentication
 
-To test authenticated routes and explore the full suite of dashboards, use the following preconfigured test credentials:
+To log in and access the full suite of pages, use the following preconfigured test credentials:
 
 | Field | Credentials |
 | :--- | :--- |
 | **Username** | `admin` |
 | **Password** | `admin123` |
-| **Access Level** | Full Administrator (Access to Dashboard, Reports, Features) |
+| **Access Scope** | Dashboard, Reports, Features, and Navigation Controls |
 
-> ℹ️ *Tip: Authentication status is persisted in your browser's `localStorage`.*
+> ℹ️ *Note: Authentication is simulated on the client side using `localStorage`.*
 
 ---
 
 ## 🚀 Quick Start & Installation
 
-Because **Lending Lens** is purely client-side, running it locally requires no build step, Node.js packages, or web server setup!
+Because **Lending Lens** is purely client-side, running it locally requires no build step, Node.js packages, or web server setup:
 
 ### Option 1: Direct File Launch
 1. **Clone the repository:**
@@ -162,7 +161,7 @@ Because **Lending Lens** is purely client-side, running it locally requires no b
    cd BI-Lending-Lens
    ```
 3. **Launch the application:**
-   - Double-click [`index.html`](index.html) or open it directly in any modern browser (Chrome, Edge, Firefox, Safari).
+   - Open [`index.html`](index.html) or [`login.html`](login.html) directly in any modern browser (Chrome, Edge, Firefox, Safari).
 
 ---
 
@@ -180,18 +179,19 @@ Because **Lending Lens** is purely client-side, running it locally requires no b
 BI-Lending-Lens/
 │
 ├── Assets/
-│   └── Banner.png                  # Project banner graphic
+│   ├── Banner.png                  # Project banner graphic
+│   └── Dashboard.png               # Cognos dashboard preview screenshot
 │
-├── Screenshot 2025-04-20 215401.png # Cognos dashboard preview screenshot
-├── lending lens .xlsx             # Underlying loan applicant dataset
+├── data/
+│   └── lending lens .xlsx          # Underlying loan applicant dataset
 │
 ├── index.html                      # Main home landing page & navigation hub
 ├── login.html                      # Authentication gateway with credential check
-├── dashboard.html                  # Embedded IBM Cognos analytics dashboard
-├── reports.html                    # Project report with live editable accordions
-├── features.html                   # Loan management, risk rules & feature toggles
+├── dashboard.html                  # Embedded IBM Cognos analytics dashboard (via iframe)
+├── reports.html                    # Analytical project report with live editable accordions
+├── features.html                   # Loan management, risk rules & feature showcase
 │
-├── LICENSE                         # MIT License file
+├── LICENSE                         # MIT License
 └── README.md                       # Repository documentation
 ```
 
@@ -199,18 +199,18 @@ BI-Lending-Lens/
 
 ## 📊 Business Intelligence Highlights
 
-The underlying dataset ([`lending lens .xlsx`](lending%20lens%20.xlsx)) profiles loan applicants across core credit indicators:
+The underlying dataset ([`data/lending lens .xlsx`](data/lending%20lens%20.xlsx)) profiles loan applicants across core credit indicators, which are visualized through IBM Cognos:
 
-- **Applicant Profiling**: Evaluation across credit score ranges, annual income tiers, and employment stability.
-- **Risk Assessment**: Cross-referencing loan amounts against debt-to-income (DTI) metrics to identify high-risk exposure.
-- **Approval Correlation**: Demonstrates the direct impact of credit score brackets on final loan approval rates.
-- **Cognos Dashboard Embed**: Encapsulates these multidimensional insights into visual charts, interactive filters, and drill-down KPIs.
+- **Credit Score Distribution**: Visualizing applicant credit brackets and their relationship to loan outcomes.
+- **Debt-to-Income (DTI) Analysis**: Reviewing applicant debt obligations against income to assess risk exposure.
+- **Approval & Rejection Trends**: Comparative breakdown of approved vs. rejected loan applications.
+- **Direct Web Integration**: Clean iframe embedding of the Cognos dashboard directly into the web application layout.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, feedback, and suggestions are always welcome!
+Contributions, feedback, and suggestions are welcome!
 
 1. Fork the Project (`https://github.com/Aakash02A/BI-Lending-Lens/fork`)
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)

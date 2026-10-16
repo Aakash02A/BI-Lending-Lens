@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home - Lending Lens</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    
     body {
-  background: url('https://img.freepik.com/free-vector/realistic-polygonal-background_23-2148925233.jpg?t=st=1745229253~exp=1745232853~hmac=532673032375bf38119eeba52515d0cf5560c71e50dbcaf7e0a4c9f133a25c38&w=1380') 
-              no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  color: #333;
-}
+      background-color: #0077b6;
+      background: #0077b6 url('https://img.freepik.com/free-vector/realistic-polygonal-background_23-2148925233.jpg?t=st=1745229253~exp=1745232853~hmac=532673032375bf38119eeba52515d0cf5560c71e50dbcaf7e0a4c9f133a25c38&w=1380') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+    }
 
 
 
     .info-grid {
-  display: flex;
-  gap: 20px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+      display: flex;
+      gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-.info-box {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 20px;
-  width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .info-box {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-.info-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
+    .info-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
 
-.info-box h3 {
-  color: #005792;
-  margin-bottom: 10px;
-}
+    .info-box h3 {
+      color: #005792;
+      margin-bottom: 10px;
+    }
 
-.info-box p {
-  color: #444;
-  font-size: 15px;
-}
+    .info-box p {
+      color: #444;
+      font-size: 15px;
+    }
 
 
     .navbar {
@@ -90,11 +90,11 @@
     }
 
     .home-content h1 {
-  font-size: 48px;
-  color: #ffffff;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-  margin-bottom: 20px;
-}
+      font-size: 48px;
+      color: #ffffff;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+      margin-bottom: 20px;
+    }
 
     .home-content p {
       font-size: 20px;
@@ -103,38 +103,40 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Navbar -->
   <div class="navbar">
-    <div class="logo">📊 Lending Lens</div>
+    <div class="logo" >📊 Lending Lens</div>
     <div class="nav-links" id="navLinks">
       <!-- Nav links will be injected here -->
     </div>
   </div>
 
   <!-- Home Content -->
-<div class="home-content">
-  <h1>Welcome to Lending Lens</h1>
-  <p><strong>
-    Your smart assistant for loan analysis and insights. Visualize data, monitor lending patterns, and make smarter financial decisions.
-  </strong></p>
+  <div class="home-content">
+    <h1>Welcome to Lending Lens</h1>
+    <p><strong>
+        Your smart assistant for loan analysis and insights. Visualize data, monitor lending patterns, and make smarter
+        financial decisions.
+      </strong></p>
 
-  <div class="info-grid">
-    <div class="info-box">
-      <h3>📊 Dashboards</h3>
-      <p>Track key lending metrics and trends with dynamic Cognos-powered dashboards.</p>
-    </div>
-    <div class="info-box">
-      <h3>🤖 Smart Risk Analysis</h3>
-      <p>Assess borrower risk with data-driven insights and makes a prediction .</p>
-    </div>
-    <div class="info-box">
-      <h3>📁 Loan Application Manager</h3>
-      <p>Submit, manage, and export loan application data efficiently in one place.</p>
+    <div class="info-grid">
+      <div class="info-box">
+        <h3>📊 Dashboards</h3>
+        <p>Track key lending metrics and trends with dynamic Cognos-powered dashboards.</p>
+      </div>
+      <div class="info-box">
+        <h3>🤖 Smart Risk Analysis</h3>
+        <p>Assess borrower risk with data-driven insights and makes a prediction .</p>
+      </div>
+      <div class="info-box">
+        <h3>📁 Loan Application Manager</h3>
+        <p>Submit, manage, and export loan application data efficiently in one place.</p>
+      </div>
     </div>
   </div>
-</div>
 
   <script>
     const navLinks = document.getElementById('navLinks');
@@ -165,4 +167,5 @@
   </script>
 
 </body>
+
 </html>
